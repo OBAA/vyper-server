@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS and IDE specific files
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
+.vscode/
+
+# Docker files
+*.dockerfile
+*.dockerignore
+
+# Compiled source
+*.pyc
+*.pyo
+__pycache__/
+
+# Coverage reports
+coverage/
+
+# Package lock files (if you use Yarn, ignore yarn.lock instead)
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm/
+
+# Miscellaneous
+*.tgz
+*.tar.gz
+*.zip
