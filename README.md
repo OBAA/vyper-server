@@ -23,7 +23,7 @@ The Vyper Server is a service that allows you to compile Vyper smart contracts t
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
+    git clone https://gitea.svc.obaa.cloud/obaa/vyper-server.git
     cd vyper-server
     ```
 
@@ -57,21 +57,21 @@ The server will be available at http://localhost:8000/compile.
     "version": "1.0.0",
     "sources": {
         "contract.vy": {
-            "content": "contract code here"
+            "content": "<contract-code-here>"
         }
     }
 }
 ```
 **Response:**
 
-On successful compilation:
+***On successful compilation:***
 
 ```json
 {
     "output": "compiled contract output here"
 }
 ```
-On error:
+***On error:***
 
 ```json
 {
