@@ -6,6 +6,8 @@ A Dockerized Vyper compiler server that exposes a REST API for compiling Vyper s
 
 The Vyper Server is a service that allows you to compile Vyper smart contracts through a REST API. It is built using Docker and provides an easy way to integrate Vyper compilation into your development workflow or other services.
 
+- **Docker Hub**: [Vyper Server Docker Image](https://hub.docker.com/r/itsobaa/vyper-server)
+
 ## Features
 
 - **Compile Vyper Contracts**: Expose a REST API endpoint to compile Vyper smart contracts.
