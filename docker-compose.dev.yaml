@@ -1,0 +1,22 @@
+
+services:
+  vyper:
+    image: vyperlang/vyper
+    container_name: vyper_compiler
+    volumes:
+      - ./playground:/code  # Mount the current directory to /code in the container
+    working_dir: /code
+    entrypoint: /bin/bash  # Start the container with a bash shell
+    stdin_open: true  # Keep the stdin open to run interactive commands
+    tty: true  # Allocate a pseudo-TTY for the bash shell
+
+  vyper_server:
+    build:
+      context: ./vyper-server
+    image: dcr.svc.obaa.cloud/vyper-server:v0.1
+    container_name: vyper_server
+    volumes:
+      - ./vyper-server/server.py:/server.py
+      - ./playground:/code
+    ports:
+      - "8000:8000"

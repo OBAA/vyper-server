@@ -1,0 +1,7 @@
+
+services:
+  vyper_server:
+    image: dcr.svc.obaa.cloud/vyper-server:v0.1
+    container_name: vyper_server
+    ports:
+      - "8000:8000"
